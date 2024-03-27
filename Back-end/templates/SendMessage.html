@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/Styles.css">
+    <title>Send Message</title>
+</head>
+<body id="sendMessageBody">
+    <h1>New Message</h1>
+    <nav id="newMessageNav">
+        <ul id="newMessageHeader">
+            <!-- in this list iteam we have a link to an image -->
+            <li><a class="homeButton" href="/"><img src="/../Images/homeDark.png" alt="Home"></a></li>
+        </ul>
+    </nav>
+    <!-- form to send message -->
+    <form action="/send" method="POST" id="send">
+        <div>
+            <label for="Recipient">Recipient User name:</label>
+            <input type="text" name="Recipient" id="Recipient" placeholder="Flaxentoe690" required >
+        </div>
+        <div>
+            <label for="Message">Message:</label>
+            <textarea name="Message" id="Message" maxlength="200" cols="40" rows="5"> </textarea>
+        </div>
+        <button type="submit">submit</button>
+    </form>
+
+    <script 
+    type="text/javascript" 
+    src="{{ url_for('static' , filename = 'Send.js')}}" >
+    </script>
+
+</body>
+</html>

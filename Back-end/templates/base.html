@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Home-Page{% endblock %}</title>
+</head>
+<body>
+    
+    <nav>
+        <button type="buttong" data-toggle = "collapse" data-target = "#navbar">Navbar</button>
+    </nav>
+
+    {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+        {% for message in messages%}
+            <div role = alert> 
+                {{message}}
+                <button type = "button" data-dismis = "alert">
+                    X
+                </button>
+            </div>
+        {% endfor %}
+    {% endif %}
+    {% endwith %}
+    <div>
+        <a href="/login">login</a>
+        <a href="/sign_up">sign up</a>
+        <a href="/logout">logout</a>
+        <a href="/">home</a>
+    </div>
+    <div>
+        {% block content %}
+        {%endblock%}
+    </div>
+</body>
+</html>

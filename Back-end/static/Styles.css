@@ -1,0 +1,173 @@
+body{
+    background-color: #6A8D73;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding-top: 5vh;
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+}
+/* tittle of the page */
+a{
+    display: flexbox;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    font-size: 30px;
+    padding-top: 2vh;
+    width: inherit;
+    height: inherit;
+}
+a:visited{
+    color: black;
+}
+nav{
+    display: flex;
+    justify-content: center;
+}
+ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    justify-content: space-around;
+    align-content: space-around;
+    background-color: #F0A868;
+    padding: 3px;
+    margin: 0;
+    width: 80vw;
+    box-shadow: 0 0 1rem black;
+    border-radius: 9px;
+}
+.navTittle{
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    padding: 0;
+    width: 80vw;
+    height: 8vh;
+}
+.navTittle li{
+    align-self: center;
+    width: 35vw;
+    height: 6vh;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.DomPage{
+    background-color: #ec7b19;
+}
+
+/* page form and interaction */
+form{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-self: center;
+    margin-top: 20vh;
+    border-radius: 17px;
+    box-shadow: 0 0 1rem black;
+    width: 80vh;
+    height: 40vh;
+    background-color: #E4FFE1;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+/* new message pages */
+h1{
+    width: 25vw;
+    padding-left: 10vw;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    margin-left: 2vw;
+    background-color: #F4FDD9;
+    border-radius: 20px;
+}
+#newMessageNav{
+    justify-content: right;
+    margin: 0;
+    height: 10vh;
+}
+#newMessageHeader{
+    width: 10vw;
+    height: inherit;
+    margin-right: 3vw;
+}
+#sendMessageBody{
+    padding-top: 0;
+}
+.homeButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: inherit;
+    height: inherit;
+}
+#Message{
+    width: 20vw;
+    height: 10vh;
+}
+#send div{
+    display: flex;
+    flex-direction: column;
+}
+#send button{
+    margin-left: 15vw;
+}
+/* home page */
+#Messages{
+    margin-top: 5vh;
+    width: 10vw;
+    height: 5vh;
+    background-color: none;
+    margin-right: 70vw;
+    margin-bottom: 10vh;
+}
+#Messages button{
+    border: none;
+    border-radius: 20px;
+    width: 10vw;
+    height: 5vh;
+    background-color: #E4FFE1;
+}
+#Messages button:hover{
+    background-color: #c4f9be;
+}
+#RecivedMessages{
+    background-color: #004225;
+    color: aliceblue;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#RecivedMessages tr{
+    display: flex;
+    gap: 10vw;
+    width: inherit;
+    border: 1px solid whitesmoke;
+    height: fit-content;
+}
+#RecivedMessages td{
+    min-width: none;
+    width:10vw;
+    text-wrap: wrap;
+    height: fit-content;
+}
+#RecivedMessages th{
+    min-width: none;
+    width:10vw;
+}
+#RecivedMessages td:last-child{
+    width: 45vw;
+}
+
+.Appear{
+    border: 2px inset black;
+    box-shadow: 0 0 10px black;
+}

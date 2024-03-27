@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home-Page</title>
+    <!-- link to the css file -->
+    <link rel="stylesheet" href="../static/Styles.css">
+</head>
+<body>
+    <!-- nav bar at top -->
+    <nav>
+        <ul class="navTittle">
+            <!-- each button is a list iteam that contains a link -->
+            <li><a href="/sign-up">SignUp</a></li>
+            <li class="DomPage"><a href="/login">Login</a></li>
+        </ul>
+    </nav>
+    <!-- this is the form to be sent off -->
+    <form action="/login" method="POST" id="Login">
+        <div>
+            <label for="User">Username:</label>
+            <input type="text" name="User" id="User" placeholder="Flaxentoe60">
+        </div>
+        <div>
+            <label for="Password">Password:</label>
+            <input type="password" name="Password" id="Password" placeholder="Password123">
+        </div>
+        <!-- subbmit button sends off the form -->
+        <button type="submit">Submit</button>
+    </form>
+
+    <!-- links that javascript page it is a text type as we will need it to handel server requests-->
+    <script 
+    type="text/javascript" 
+    src="{{ url_for('static' , filename = 'login.js')}}" >
+    </script>
+
+    
+</body>
+</html>

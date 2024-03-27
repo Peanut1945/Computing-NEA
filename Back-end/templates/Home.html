@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/Styles.css">
+    <title>Home-Page</title>
+</head>
+<body>
+    <!-- header -->
+    <h1>Home</h1>
+    <nav>
+        <!-- navigation list , this is the orange bar -->
+        <ul>
+            <li><a href="/sign-up">sign up</a></li>
+            <li><a href="/login">login</a></li>
+            <li><a href="/send">Send message</a></li>
+        </ul>
+    </nav>
+    <form action="/" method="GET" id="Messages">
+        <button type="submit">Open Messages</button>
+        <!-- click button, then is shows all people who have sent them a message
+        then they can click each person and it will show there messages -->
+    </form>
+    <!-- this table will hold the messages added by javscipt  -->
+    <table id="RecivedMessages">
+        
+    </table>
+    <!-- connection to the javascript file -->
+    <script 
+    type="text/javascript" 
+    src="{{ url_for('static' , filename = 'Index.js')}}" >
+    </script>
+</body>
+</html>

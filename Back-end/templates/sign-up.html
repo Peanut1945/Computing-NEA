@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/Styles.css">
+    <title>sign-up</title>
+</head>
+<body>
+    <nav class="navTittle">
+        <ul>
+            <li class="DomPage"><a href="/sign-up">SignUp</a></li>
+            <li><a href="/login">Login</a></li>
+        </ul>
+    </nav>
+
+    <form  action="/sign-up" method="POST" id="sign-up">
+        <div>
+            <label for="User">Username:</label>
+            <input type="text" name="User" id="User" placeholder="Flaxentoe60">
+        </div>
+        <div>
+            <label for="Password">Password:</label>
+            <input type="password" name="Password" id="Password" placeholder="Password123">
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+
+    <script 
+    type="text/javascript" 
+    src="{{ url_for('static' , filename = 'signUp.js')}}" >
+    </script>
+    
+</body>
+</html>
